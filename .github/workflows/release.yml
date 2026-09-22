@@ -1,13 +1,9 @@
+
 name: 🍰 Release
 
 on:
-    push:
-        tags:
-            - 'v*.*.*'
-            - 'v*.*.*-alpha.*'
-            - 'v*.*.*-beta.*'
-            - 'v*.*.*-rc.*'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true

@@ -1,11 +1,9 @@
+
 name: 🔮 Sync Mirror
 
 on:
-    push:
-        branches:
-            - main
-            - dev
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
     sync:
         if: github.repository == 'dream-num/univer'

@@ -1,12 +1,9 @@
+
 name: 📌 Check PR
 
 on:
-    pull_request:
-        types:
-            - opened
-            - edited
-            - synchronize
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
     pull-requests: read
 

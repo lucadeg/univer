@@ -1,14 +1,9 @@
+
 name: 🌐 Deploy to GitHub Pages
 
 on:
-    push:
-        branches: [dev]
-        tags:
-            - 'v*.*.*'
-            - 'v*.*.*-alpha.*'
-            - 'v*.*.*-beta.*'
-            - 'v*.*.*-rc.*'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency:
     group: github-pages
     cancel-in-progress: false

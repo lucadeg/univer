@@ -1,13 +1,9 @@
+
 name: 📦 Build
 
 on:
-    push:
-        branches:
-            - dev
-    pull_request:
-        branches:
-            - dev
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true

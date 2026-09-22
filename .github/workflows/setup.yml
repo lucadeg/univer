@@ -1,10 +1,9 @@
+
 name: 🎬 Setup
 
 on:
-    pull_request:
-        branches: [dev]
-        types: [opened, synchronize, reopened, closed]
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
     actions: write
     pull-requests: read
